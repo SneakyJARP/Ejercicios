@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      input {
+        display: block;
+        margin: 8px;
+      }
+      select {
+        display: block;
+        margin: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https//:Yourserver.com" method="post">
+      <lable for="email">Email:</lable>
+      <input type="text" name="email" placeholder="abc@def.com" required/>
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        maxlength="16"
+        minlength="6"
+        required
+      />
+      <label for="name">Name:</label>
+      <input type="text" name="name" maxlength="25" minlength="3" required />
+      <label for="lastname">Last Name:</label>
+      <input type="text" name="lastname" maxlength="25" required />
+      <label for="date_birth">Date of birth:</label>
+      <input type="date" name="date_birth" id="input_dateBirth" required />
+      <label for="phone_number">Phone Number:</label>
+      <input
+        type="text"
+        name="phone_number"
+        id="input_phoneNumber"
+        required
+        placeholder="123-456-789"
+      />
+      <label for="dropdown">Plans</label>
+      <select name="plan" id="dd_plan" requiered>
+        <option value="0">Free</option>
+        <optgroup label="Mothly Plan">
+          <option value="5.99">Bronze 5.99€</option>
+          <option value="9.99">Silver 9.99€</option>
+          <option value="11.99">Gold 11.99€</option>
+        </optgroup>
+      </select>
+      <label for="checkbox">PRO Plan</label>
+      <input type="checkbox" name="checkbox" value="PRO" id="pro" />
+      <label for="credit_card">Credit Card Number</label>
+      <input
+        type="tel"
+        name="credit_card"
+        id="input_creditCard"
+        placeholder="xxxx-xxxx-xxxx-xxxx"
+        maxlength="19"
+        minlength="13"
+        requiered
+      />
+      <label for="CVC">CVC</label>
+      <input type="tel" minlength="3" maxlength="4" placeholder="CVC" required />
+      <label for="card_expire">Expire Date</label>
+      <input type="text" name="card_expire" placeholder="MM/YY" maxlength="4"  required/>
+      <label for="adress">Billing Address</label>
+      <input type="text" name="adress" required/>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
