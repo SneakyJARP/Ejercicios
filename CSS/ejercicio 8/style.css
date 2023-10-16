@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body h1{
+    font-size: 15px;
+
+}
+
+body h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: white;
+}
+
+
+.card{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgba(114, 114, 114, 0.589);
+    margin: 20px;
+}
+
+.top{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.top .avatar{
+    height: 30px;
+    width: 30px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.img-container{
+    position: relative;
+}
+.img-container img{
+    position: absolute;
+    inline-size: 100%;
+    width: 20px;
+    height: 20px;
+    padding-left: 120px;
+    top: -0.85ch;
+    z-index: 1;
+    
+}
+
+.imagen{
+    display: block;
+}
+
+.image{
+    position:relative;
+}
+
+.image img{
+    position: absolute;
+    inline-size: 100%;
+}
+
+.botones{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    top: 210px;
+    margin-left: 10px;
+}
+
+.botones img{
+    width: 20px;
+    height: 20px;
+}
+
+.bot{
+    position: relative;
+    z-index: 2;
+    top: 220px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.card-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 375px){
+    .card-box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media  (max-width: 768px){
+    .card-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
